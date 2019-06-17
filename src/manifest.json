@@ -30,5 +30,16 @@
   "web_accessible_resources": [
     "devtools/devtools.html",
     "devtools/devtools-background.html"
-  ]
+  ],
+  "content_scripts": [{
+    "matches": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "js": [
+      "jquery-2.2.0.min.js",
+      "content_script.js"
+    ],
+    "css": ["mystyle.css"]
+  }],
 }

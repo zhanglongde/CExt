@@ -12,6 +12,9 @@ const config = {
   context: __dirname + '/src',
   entry: {
     'background': './background.js',
+//     'content_script': './content_script.js',
+//     'jquery-2.2.0.min': './jquery-2.2.0.min.js',
+//     'mystyle': './mystyle.css',
     'popup/popup': './popup/popup.js',
     'tab/tab': './tab/tab.js',
     'devtools/devtools': './devtools/devtools.js',
@@ -66,6 +69,9 @@ const config = {
       { from: 'tab/tab.html', to: 'tab/tab.html', transform: transformHtml },
       { from: 'devtools/devtools-background.html', to: 'devtools/devtools-background.html', transform: transformHtml },
       { from: 'devtools/devtools.html', to: 'devtools/devtools.html', transform: transformHtml },
+      { from: 'content_script.js', to: 'content_script.js' },
+      { from: 'jquery-2.2.0.min.js', to: 'jquery-2.2.0.min.js' },
+      { from: 'mystyle.css', to: 'mystyle.css' },
       {
         from: 'manifest.json',
         to: 'manifest.json',
